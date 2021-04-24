@@ -1,36 +1,8 @@
 import random
 
-# 3 dados
-# 2 jugadores
-# 2 rondas
-
-# Si todos los dados son iguales -> suma 6 puntos
-
-# Si 2 dados son iguales -> relanza el que es distinto
-
-# Si los dados son todos distintos -> 0 puntos
-
 print('-' * 79)
 print('Bienvenidos al juego de dados')
 print('-' * 79)
-
-
-'''
-    Reglas del juego \n \n 
-    Se juegan dos rondas \n \n
-    En la primera ambos jugadores tiran los dados,\n
-    si salen 3 dados iguales suma 6 puntos, si salen 2 dados iguales, se \n
-    vuelve a tirar el dado desigual, si salen los 3 desiguales suma 0 puntos.\n \n
-
-    En la segunda ronda se vuelve a tirar los dados apostando el puntaje actual \n
-    a la paridad de la suma de los dados, si la suma de los dados resulta de la \n
-    paridad elegida, suma el dado de mayor valor al puntaje final, y si además \n
-    los 3 dados resultan iguales, se duplica el valor del puntaje \n
-    En caso de no salir la paridad elegida, se resta el valor del dado de menor \n
-    valor al puntaje del jugador.
-
-    Suerte y a jugar!!!
-'''
 
 # Reglas del juego
 
@@ -60,7 +32,7 @@ print('-' * 79)
 input(f'{nombre_1} presione enter para tirar los dados')
 print('-' * 79)
 
-# PROCESO
+# PROCESO DE TIRADA DE DADOS 
 dado1 = random.randint(1, 6)
 dado2 = random.randint(1, 6)
 dado3 = random.randint(1, 6)
@@ -118,10 +90,12 @@ print('-' * 79)
 input(f'> {nombre_2} presione enter para tirar los dados')
 print('-' * 79)
 
+# PROCESO DE TIRADA DE DADOS 
 dado1 = random.randint(1, 6)
 dado2 = random.randint(1, 6)
 dado3 = random.randint(1, 6)
 
+# PROCESO DE COMPARACIÓN DE DADOS PARA SUMA DE PUNTAJES
 if dado1 == dado2 == dado3:
     print(nombre_2, 'sacó 3 dados iguales, sumas 6 puntos')
     puntaje_2 += 6
@@ -168,11 +142,6 @@ print('-' * 79 )
 print('Comienza la segunda ronda, momento de apostar!!')
 input('Presiona enter para continuar')
 
-# print('Momento de apostar! \n Apostas todos tus puntos a un paridad, si la suma de los 3 dados resulta la paridad'
-#       ' elegida \n entonces se te suma el valor del dado mayor, y si además sacas todos los dados de la '
-#       ' paridad elegida \n duplicas tus puntos.  En caso de que no aciertes a la paridad, se te restará el valor \n '
-#       'del dado de menor valor')
-
 print('-' * 79)
 print('Puntos de ', nombre_1, ': ', puntaje_1)
 print('Puntos de ', nombre_2, ': ', puntaje_2)
@@ -185,13 +154,15 @@ print('-' * 79)
 
 input(f'> {nombre_1} presiona enter para tirar los dados')
 print('-' * 79)
+
+# PROCESO DE TIRADA DE DADOS 
 dado1 = random.randint(1, 6)
 dado2 = random.randint(1, 6)
 dado3 = random.randint(1, 6)
 
 print('Sacaste: ', dado1, dado2, dado3)
 
-# Proceso de verificación de paridad elegida
+# PROCESO DE VERIFICACION DE PARIDAD ELEGIDA
 if eleccion_paridad == 1:
     print('Elegiste par')
     if (dado1 + dado2 + dado3) % 2 == 0:
@@ -233,6 +204,7 @@ elif eleccion_paridad == 0:
 
 # ------------------ JUGADOR 2 ------------------
 
+# ELECCION DE PARIDAD
 print('-' * 79)
 print(f'{nombre_2} Elija la paridad')
 eleccion_paridad = int(input(f'> {nombre_2}, presione 1 para elegir PAR o 0 para elegir IMPAR: '))
@@ -241,6 +213,7 @@ print('-' * 79)
 input(f'> {nombre_2} presiona enter para tirar los dados')
 print('-' * 79)
 
+# PROCESO DE TIRADA DE DADOS 
 dado1 = random.randint(1, 6)
 dado2 = random.randint(1, 6)
 dado3 = random.randint(1, 6)
@@ -248,7 +221,7 @@ dado3 = random.randint(1, 6)
 print('Sacaste: ', dado1, dado2, dado3)
 
 
-# Proceso de verificación de paridad elegida
+# PROCESO DE VERIFICACION DE PARIDAD ELEGIDA
 if eleccion_paridad == 1:
     print('Elegiste par')
     if (dado1 + dado2 + dado3) % 2 == 0:
@@ -294,12 +267,14 @@ elif eleccion_paridad == 0:
 
 print('-' * 79)
 
+# MUESTRA DEL PUNTAJE FINAL
 print(f'Resultado final:')
 print(f'\t {nombre_1} sacaste: {puntaje_1}')
 print(f'\t {nombre_2} sacaste: {puntaje_2}')
 
 print('-' * 79)
 
+# VERIFICACION DE JUGADOR GANADOR
 if puntaje_1 > puntaje_2:
     print('Ganaste', nombre_1)
 elif puntaje_2 > puntaje_1:
