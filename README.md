@@ -1,16 +1,17 @@
 # Python_dice_game
 
-Reglas del juego \n \n 
-    Se juegan dos rondas \n \n
-    En la primera ambos jugadores tiran los dados,\n
-    si salen 3 dados iguales suma 6 puntos, si salen 2 dados iguales, se \n
-    vuelve a tirar el dado desigual, si salen los 3 desiguales suma 0 puntos.\n \n
+Reglas del juego 
 
-    En la segunda ronda se vuelve a tirar los dados apostando el puntaje actual \n
-    a la paridad de la suma de los dados, si la suma de los dados resulta de la \n
-    paridad elegida, suma el dado de mayor valor al puntaje final, y si además \n
-    los 3 dados resultan iguales, se duplica el valor del puntaje \n
-    En caso de no salir la paridad elegida, se resta el valor del dado de menor \n
-    valor al puntaje del jugador.
+Se juegan dos rondas
+En la primera ambos jugadores tiran los dados
+si salen 3 dados iguales suma 6 puntos, si salen 2 dados iguales, se
+vuelve a tirar el dado desigual, si salen los 3 desiguales suma 0 puntos
 
-    Suerte y a jugar!!!
+En la segunda ronda se vuelve a tirar los dados apostando el puntaje actual
+a la paridad de la suma de los dados, si la suma de los dados resulta de la
+paridad elegida, suma el dado de mayor valor al puntaje final, y si además
+los 3 dados resultan iguales, se duplica el valor del puntaje
+En caso de no salir la paridad elegida, se resta el valor del dado de menor
+valor al puntaje del jugador.
+
+Suerte y a jugar!!!
