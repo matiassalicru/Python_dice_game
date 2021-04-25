@@ -180,7 +180,8 @@ if eleccion_paridad == 1:
     else:
         dado_menor = min(dado1, dado2, dado3)
         puntaje_1 -= dado_menor
-        print('No salio la paridad elegida, tus puntos quedan en: ', puntaje_1)
+        print('No salio la paridad elegida se te restó el dado de menor valor,\n'
+        'tus puntos quedan en: ', puntaje_1)
 elif eleccion_paridad == 0:
     print('elegiste impar')
     if (dado1 + dado2 + dado3) % 2 == 1:
@@ -198,7 +199,7 @@ elif eleccion_paridad == 0:
         dado_menor = min(dado1, dado2, dado3)
         puntaje_1 -= dado_menor
         print('No salio la paridad elegida se te restó el dado de menor valor,\n'
-              ' tus puntos quedan en:', puntaje_1)
+              'tus puntos quedan en: ', puntaje_1)
         input('Presiona enter para continuar')
 
 
@@ -239,7 +240,8 @@ if eleccion_paridad == 1:
     else:
         dado_menor = min(dado1, dado2, dado3)
         puntaje_2 -= dado_menor
-        print('No salio la paridad elegida, tus puntos quedan en: ', puntaje_2)
+        print('No salio la paridad elegida se te restó el dado de menor valor,\n'
+         'tus puntos quedan en: ', puntaje_2)
         input('Presiona enter para continuar')
 elif eleccion_paridad == 0:
     print('elegiste impar')
